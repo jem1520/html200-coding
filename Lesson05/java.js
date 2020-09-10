@@ -15,7 +15,7 @@ input = prompt('Enter one of the following: Q to quit, W to withdraw, D to depos
     switch (input) {
 
       case 'D':{
-      deposit = prompt('Enter amount to deposit');
+      deposit = prompt('Enter amount to deposit.');
 
       balance = balance + deposit;
 
@@ -24,7 +24,7 @@ input = prompt('Enter one of the following: Q to quit, W to withdraw, D to depos
       }
 
       case 'W':{
-      withdraw = prompt('Enter amount to withdraw');
+      withdraw = prompt('Enter amount to withdraw.');
 
       balance = balance - withdraw;
 
@@ -39,6 +39,7 @@ input = prompt('Enter one of the following: Q to quit, W to withdraw, D to depos
       }
 
       default: {
+       input = prompt('Not a valid entry.')
        return 'not a valid entry';
       }
 
